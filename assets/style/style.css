@@ -441,7 +441,7 @@ nav.dark-mode a:hover{
         padding: 10px; /* Adjust padding for smaller screens */
     }
     #hero-img img {
-        max-width: 80%; /* Adjust image width for smaller screens */
+        max-width: 100%; /* Adjust image width for smaller screens */
     }
 }
 
