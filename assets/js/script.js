@@ -1,3 +1,5 @@
+alert("Hello, this site isn't currently optimized for mobile screens, please switch to a PC")
+
 // Dark/Light Mode
 
 
@@ -89,4 +91,4 @@ document.getElementById("togglebtn").addEventListener("click", function(){
 });
 
 
-// Redirect user to project
+
