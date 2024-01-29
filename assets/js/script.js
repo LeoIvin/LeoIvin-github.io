@@ -7,12 +7,23 @@ document.getElementById("togglebtn").addEventListener("click", function(){
     var navLinks = navElement.getElementsByTagName("a");
     var navBtn = navElement.getElementsByTagName("button");
     var cardText = document.getElementsByClassName("project-text")
+    var footerText = document.getElementsByClassName('footer')
+    var card = document.getElementsByClassName('card')
 
     if (bodyElement.classList.contains("light-mode")) {
         bodyElement.classList.remove("light-mode");
         bodyElement.classList.add("dark-mode");
         navElement.classList.remove("light-mode");
         navElement.classList.add("dark-mode");
+
+        for (var i = 0; i < footerText.length; i++) {
+            footerText[i].style.color = "white";
+        }
+
+        for (var i = 0; i < card.length; i++) {
+            card[i].style.backgroundColor = "#2f2b3a"
+        }
+
         for (var i = 0; i < navLinks.length; i++) {
             navLinks[i].style.color = "white";
             navLinks[i].onmouseover = function(){
@@ -42,6 +53,15 @@ document.getElementById("togglebtn").addEventListener("click", function(){
         bodyElement.classList.add("light-mode");
         navElement.classList.remove("dark-mode");
         navElement.classList.add("light-mode");
+
+        for (var i = 0; i < footerText.length; i++) {
+            footerText[i].style.color = "black";
+        }
+
+        for (var i = 0; i < card.length; i++) {
+            card[i].style.backgroundColor = "#333"
+        }
+
         for (var i = 0; i < navLinks.length; i++) {
             navLinks[i].style.color = "black";
             navLinks[i].onmouseover = function(){

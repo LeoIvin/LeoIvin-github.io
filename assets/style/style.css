@@ -385,4 +385,47 @@ nav.dark-mode a:hover{
 }
 
 
+/* Responsivity */
+
+/* CSS for larger screens */
+@media (min-width: 1200px) {
+    /* Styles for larger screens */
+    .container {
+        width: 80%;
+    }
+    .card {
+        width: 325px;
+    }
+    .my-form textarea, .my-form input[type="text"] {
+        width: 30%;
+    }
+}
+
+/* CSS for tablet screens */
+@media (max-width: 1199px) and (min-width: 768px) {
+    /* Styles for tablet screens */
+    .container {
+        width: 90%;
+    }
+    .card {
+        width: 45%;
+    }
+    .my-form textarea, .my-form input[type="text"] {
+        width: 60%;
+    }
+}
+
+/* CSS for mobile screens */
+@media (max-width: 767px) {
+    /* Styles for mobile screens */
+    .container {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+    }
+    .my-form textarea, .my-form input[type="text"] {
+        width: 90%; /* Adjust this value as needed */
+    }
+}
 
