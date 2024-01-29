@@ -1,4 +1,21 @@
-alert("Hello, this site isn't currently optimized for mobile screens, please switch to a PC")
+// show alert on mobile screens 
+
+window.onload = function() {
+    if(window.innerWidth <= 800 && window.innerHeight <= 600) {
+        var warningMessage = document.createElement('div');
+        warningMessage.innerHTML = "Hello, this site isn't currently optimized for mobile screens, please switch to a PC";
+        warningMessage.style.position = 'fixed';
+        warningMessage.style.top = '0';
+        warningMessage.style.left = '0';
+        warningMessage.style.width = '100%';
+        warningMessage.style.padding = '10px';
+        warningMessage.style.backgroundColor = 'yellow';
+        warningMessage.style.textAlign = 'center';
+        warningMessage.style.zIndex = '100';
+        document.body.appendChild(warningMessage);
+    }
+}
+
 
 // Dark/Light Mode
 
